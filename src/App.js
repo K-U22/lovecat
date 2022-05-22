@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect,useState } from 'react';
+import Article from './conponents/Article';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+  const targetElement = document.querySelectorAll(".animationTarget");
+   
+  const[num,setnum] = useState(0);
+
+  useEffect( () =>{
+
+  document.addEventListener("scroll", function(){ 
+      for(let i = 0;i < targetElement.length;i++){
+    const getElementDistance = targetElement[i].getBoundingClientRect().top + (targetElement[i].clientHeight * 0.6);
+     
+    if(window.innerHeight > getElementDistance ){
+        targetElement[i].classList.add("show");
+    }
+    
+    
+ }})});
+
+ const numAdd = () => {
+   setnum(prevState => prevState + 1);
+ }
+
+ document.addEventListener("scroll", function(){ 
+   numAdd();
+});
+ 
+return (
+  <>  
+   <Article />
+   
+  </> 
   );
 }
 
