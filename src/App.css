@@ -24,6 +24,7 @@ header h1 {
   font-weight: bold;
   margin-bottom: 60px;
   white-space: nowrap;
+  text-align: left;
   animation: titleAnimation 1.5s;
 }
 
@@ -46,13 +47,17 @@ main {
   transform: none;
 }*/
 
-.contents li.show h2,
-.contents li.show p,
+
 main .contents li.show img{
   transform: none;
   opacity: 1;
 }
 
+.contents li.show p,
+.contents li.show h2{
+  transform: none;
+  opacity: 0.7;
+}
 
 
 .contents li:not(:first-of-type){
@@ -66,6 +71,8 @@ main .contents li.show img{
 .contents li:nth-of-type(even) .contentsText{
   align-items: flex-start;
 }
+
+
 
 .contents li:nth-of-type(odd) img{
   
@@ -115,7 +122,7 @@ main .contents li.show img{
 
 .contents img{
   width: 80%;
-  height: 690px;
+  height: auto;
   display: block;
   border-radius: 10px;
   opacity: 0;
