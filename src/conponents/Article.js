@@ -9,7 +9,8 @@ const Article = (props) => {
 <>   
     <div>
         <header>
-            <h1>ねこ大好き</h1>
+            <h1>猫画像
+            </h1>
         </header>
     </div>
             
@@ -18,9 +19,9 @@ const Article = (props) => {
           <li className = "animationTarget">
               <img src = {img1} alt=""/>
                  <div className="contentsText">
-                     <h2>猫と友達のアライグマ</h2>
-                     <p>アライグマは気性が荒くて、狩る側の猟犬を逆に狩ってしまったこともあるんだって。<br/>
-                     怖いね、でも友達だね。
+                     <h2>猫１</h2>
+                     <p>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫<br/>
+                     猫猫猫猫猫猫猫猫猫猫
                      </p>
                  </div>
           </li>
@@ -28,9 +29,9 @@ const Article = (props) => {
           <li className = "animationTarget">
           <img src = {img2} alt=""/>
                  <div className="contentsText">
-                     <h2>綺麗</h2>
-                     <p>顔が世界一奇麗だね。<br/>
-                     ネコ界の中でもきっとアイドル的存在なんだろうね。
+                 <h2>猫２</h2>
+                     <p>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫<br/>
+                     猫猫猫猫猫猫猫猫猫猫
                      </p>
                  </div>
           </li>
@@ -38,9 +39,9 @@ const Article = (props) => {
           <li className = "animationTarget">
           <img src = {img3} alt=""/>
                  <div className="contentsText">
-                     <h2>隙間大臣ねこ</h2>
-                     <p>ここから先は行っちゃダメだっていうのに体ねじこんじゃうね。<br/>
-                     真っ白で柔らかいおばかだね。
+                 <h2>猫３</h2>
+                     <p>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫<br/>
+                     猫猫猫猫猫猫猫猫猫猫
                      </p>
                  </div>
           </li>
@@ -48,9 +49,9 @@ const Article = (props) => {
           <li className = "animationTarget">
           <img src = {img4} alt=""/>
                  <div className="contentsText">
-                     <h2>ネコ科の本能</h2>
-                     <p>完全に獲物を仕留めた時のサバンナとかに居るネコ科だね。<br/>
-                     でもちっちゃいから可愛いね。
+                 <h2>猫４</h2>
+                     <p>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫<br/>
+                     猫猫猫猫猫猫猫猫猫猫
                      </p>
                  </div>
           
